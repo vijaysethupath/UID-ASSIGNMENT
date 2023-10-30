@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CYBER NATION</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body class="registration-form">
+    <div class="top-right-menu">
+     
+        <a href="index.html">Home</a>
+        <a href="mouse_events.html">Mouse Events</a>
+        <a href="calculator.html">Calculator</a>
+        <a href="registration_form.html">Registration Form</a>
+        <a href="cybersecurity.html">Cybersecurity</a>
+    </div>
+    <div class="container">
+        <h2>Register for Cyber nation</h2>
+        <form action="submit_registration.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number (10 digits):</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            <small>Please enter a 10-digit phone number (numbers only).</small>
+
+            <label for="college">College Name:</label>
+            <input type="text" id="college" name "college" required>
+
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+
+            <label for="event">Select Event:</label>
+            <select id="event" name="event" required style="width: 100%;">
+                <option value="Ethical hacking">Ethical hacking</option>
+                <option value="Forensics">Forensics</option>
+            </select>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required style="width: 100%;">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+
+</html>

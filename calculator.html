@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body class="calculator">
+    <header>
+        <nav class="top-menu">
+            <a href="index.html">Home</a>
+            <a href="mouse_events.html">Mouse Events</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="registration_form.html">Registration Form</a>
+            <a href="cybersecurity.html">Cybersecurity</a>
+        </nav>
+    </header>
+
+    <h1>Currency Converter</h1>
+
+    <!-- Add an image to your calculator page -->
+    <div id="converter">
+        <input type="number" id="amount" placeholder="Amount">
+        <select id="fromCurrency">
+            <!-- List of currencies will be populated by JavaScript -->
+        </select>
+        <select id="toCurrency">
+            <!-- List of currencies will be populated by JavaScript -->
+        </select>
+        <button id="convertButton">Convert</button>
+        <p id="result"></p>
+    </div>
+    <img src="cal.jpg" alt="Calculator Image" class="calculator-image">
+
+    <script src="currency_converter.js"></script>
+</body>
+
+</html>

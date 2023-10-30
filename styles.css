@@ -1,0 +1,446 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: #C21E56;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styles for the main page */
+/* Styles for the main page */
+.main-page {
+    background: url('html-system-website-concept.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff; /* Set the default text color for the main page content to white */
+    text-align: center; /* Center-align text content */
+    padding: 20px; /* Add padding to the content for spacing */
+}
+
+/* Make the box outside the white container semi-transparent */
+body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: -1; /* Place it behind the content */
+}
+
+h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out; /* Add a fadeIn animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for the container */
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+    animation: slideInUp 2s ease-in-out; /* Add a slideInUp animation */
+}
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styles for the main content */
+.main-content {
+    text-align: left; /* Align the text content to the left within the container */
+    color: #fff; /* Set the text color for the main content to white */
+}
+
+h2 {
+    font-size: 24px; /* Set the font size for the subheading */
+    color: #fff; /* Set the text color to white */
+}
+
+p {
+    color: #000; /* Set the text color for all 'p' elements to black */
+}
+
+a.cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    animation: pulse 2s infinite; /* Add a pulse animation */
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+a.cta-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+}
+p {
+    color: #000;
+    animation: fadeIn 2s ease-in-out; /* Add a fadeIn animation to all p elements */
+}
+
+
+
+
+/* Styles for the Mouse Events Page */
+.mouse-events {
+    background: url('1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Additional styles for the CTF and Gaming events */
+.event-description {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Styles for the .box class (hover over me) */
+.box {
+    padding: 20px;
+    border: 1px solid #C21E56;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #fff;
+    color: #C21E56;
+}
+
+.box:hover {
+    background-color: #C21E56;
+    color: #fff;
+}
+
+.event-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: left;
+}
+
+.event-box img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 20px;
+}
+
+.event-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: left;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 20px auto;
+    color: #fff;
+}
+
+.event-card:hover {
+    background-color: #C21E56;
+    color: #fff;
+}
+
+.mouse-events h1 {
+    color: white;
+}
+
+
+.top-right-menu {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+/* Styles for the Calculator Page */
+.calculator {
+    background: url('cal.jpg') no-repeat center center fixed;
+    background-size: cover; /* Make sure the background image covers the entire viewport */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh; /* Use 100vh to ensure it takes the full vertical space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+}
+
+/* Styles for the navigation bar */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the navigation bar */
+    padding: 20px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px; /* Add horizontal spacing between links */
+}
+
+
+.calculator-image {
+    max-width: 100%;
+    max-height: 50%;
+}
+
+#converter {
+    background-color: #300;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: left;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    background-color: #C21E56;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #fff; /* Set the text color to white */
+}
+
+.top-right-menu {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+.top-menu {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the navigation bar */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.top-menu a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px; /* Add horizontal spacing between links */
+}
+
+/* Styles for the Registration Form Page */
+.registration-form {
+    background: url('r.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+}
+
+.top-right-menu {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+.top-right-menu a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px; /* Add horizontal spacing between links */
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: left;
+}
+
+.container label, .container input, .container select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container small {
+    color: #fff;
+}
+
+.container select {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.container input, .container select {
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.container input[type="submit"] {
+    background-color: #C21E56;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #fff;
+    color: #C21E56;
+}
+
+
+/* CSS for the "cyber" body class */
+.cyber {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('https://www.neit.edu/wp-content/uploads/2022/10/Cyber-Security-Icon-Concept-2-1.jpeg'); /* Add the URL of your background image here */
+    background-size: cover; /* Ensure the background image covers the entire element */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-attachment: fixed; /* Keep the background fixed */
+    margin: 0;
+    padding: 0;
+}
+
+.cyber .container {
+    background-color: rgba(255, 255, 255, 0.8); /* Add background color with transparency */
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cyber #captchaBackground {
+    background-color: #C21E56;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cyber #captcha {
+    color: #fff;
+}
+
+.cyber #textBox {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.cyber #buttons {
+    margin-top: 20px;
+}
+
+.cyber #submit {
+    background-color: #C21E56;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cyber #refresh {
+    background-color: #fff;
+    color: #FF0000; /* Set the text color to red (hexadecimal value for red) */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.cyber #output {
+    margin-top: 10px;
+    color: #C21E56;
+}
+
